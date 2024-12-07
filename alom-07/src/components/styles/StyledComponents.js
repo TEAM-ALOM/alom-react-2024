@@ -50,6 +50,7 @@ export const ListItem = styled.li`
   margin: 5px 0;
   background-color: #f8f9fa;
   border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
 
   &:hover {
     background-color: #e9ecef;
