@@ -28,12 +28,12 @@ export const WeatherCode = styled.p`
 export const HourlyForecastWrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  gap: 10px;
   overflow-x: auto;
-  padding: 20px;
+  padding: 10px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 15px;
   margin-top: auto;
+  box-sizing: border-box;
 `;
 
 export const HourlyItem = styled.div`
@@ -41,8 +41,10 @@ export const HourlyItem = styled.div`
   flex-direction: column;
   align-items: center;
   color: white;
-  padding: 10px;
-  min-width: 100px;
+  padding: 20px;
+  min-width: 110px;
+  font-family: 'Roboto', sans-serif;
+  gap: 20px;
 `;
 
 export const DailyForecastWrapper = styled.div`
