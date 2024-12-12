@@ -70,3 +70,31 @@ export const DailyItem = styled.div`
     border-bottom: none;
   }
 `;
+
+export const LoadingWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+`;
+
+export const LoadingText = styled.div`
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out infinite;
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+`;
