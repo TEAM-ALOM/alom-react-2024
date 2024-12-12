@@ -53,6 +53,7 @@ export const DailyForecastWrapper = styled.div`
   background: rgba(255, 255, 255, 0.2);
   border-radius: 15px;
   margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
 `;
 
 export const DailyItem = styled.div`
