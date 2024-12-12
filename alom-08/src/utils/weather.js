@@ -21,8 +21,7 @@ export const getWeatherDescription = (code) => {
 
 export const formatHourlyData = (weatherData) => {
   if (!weatherData) return [];
-  // 밑에 코드 채워주세요
-  return [];
+  return weatherData.hourly;
 };
 
 export const formatDailyData = (weatherData) => {
