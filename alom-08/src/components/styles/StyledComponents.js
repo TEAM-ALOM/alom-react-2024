@@ -28,12 +28,12 @@ export const WeatherCode = styled.p`
 export const HourlyForecastWrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  gap: 10px;
   overflow-x: auto;
-  padding: 20px;
+  padding: 10px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 15px;
   margin-top: auto;
+  box-sizing: border-box;
 `;
 
 export const HourlyItem = styled.div`
@@ -41,8 +41,10 @@ export const HourlyItem = styled.div`
   flex-direction: column;
   align-items: center;
   color: white;
-  padding: 10px;
-  min-width: 100px;
+  padding: 20px;
+  min-width: 110px;
+  font-family: 'Roboto', sans-serif;
+  gap: 20px;
 `;
 
 export const DailyForecastWrapper = styled.div`
@@ -53,6 +55,7 @@ export const DailyForecastWrapper = styled.div`
   background: rgba(255, 255, 255, 0.2);
   border-radius: 15px;
   margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
 `;
 
 export const DailyItem = styled.div`
@@ -65,5 +68,33 @@ export const DailyItem = styled.div`
 
   &:last-child {
     border-bottom: none;
+  }
+`;
+
+export const LoadingWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+`;
+
+export const LoadingText = styled.div`
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out infinite;
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
   }
 `;
